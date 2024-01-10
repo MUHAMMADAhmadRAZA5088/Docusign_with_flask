@@ -144,6 +144,9 @@ def send_envelope():
         email = request.form['email']
         template_id = request.form['template_id']
 
+        # access Key docusign
+        access_token()
+        
         url = "https://demo.docusign.net/restapi//v2.1/accounts/bd182fdb-bda4-40d6-85b5-0a452eaef7e6/envelopes"
 
         file_path = 'file.json'
